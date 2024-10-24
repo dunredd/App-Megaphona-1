@@ -1,0 +1,103 @@
+:root{
+    --blue-d:#5989E2;
+    --blue-l:#2E60BB;
+    --green-d:#1DCC97;
+    --green-l:#097C5A;
+    --grey01-d:#1C2021;
+    --grey01-l:#C9E1E8;
+    --grey02-d:#C9E1E8;
+    --grey02-l:#1C2021;
+    --grey03-d:#0C1619;
+    --grey03-l:#E9F6FA;
+    --grey04-d:#738488;
+    --grey04-l:#E9F6FA;
+    --lime-d:#7EC137;
+    --lime-l:#45770C;
+    --orange-d:#E9773A;
+    --orange-l:#BC4200;
+    --purple-d:#AC6CFF;
+    --purple-l:#7E3ED0;
+    --rose-d:#E154A0;
+    --rose-l:#C11470;
+    --teal-d:#37B3C1;
+    --teal-l:#007582;
+    --light-grey-d:#C9E1E8;
+    --light-grey-l:#EAF1F3;
+    --opacity-10-d:#FFFFFF1A;
+    --opacity-10-l:#0000001A;
+    --opacity-20-d:#FFFFFF33;
+    --opacity-20-l:#00000033;
+    --opacity-30-d:#FFFFFF80;
+    --opacity-30-l:#00000080;
+    }
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey03-d);
+    color: var(--grey01-l);
+}
+      
+      
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+      
+a {
+    color: var(--green-d);
+}
+      
+.status {
+    display: inline-flex;
+    background-color: #333;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    border: .0625rem var(--light-grey-d) solid;
+}
+      
+.status--offline {
+    background-color: var(--pink-d);
+}
+      
+.status--online {
+    background-color: var(--green-d);
+}
+      
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--green-d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .25rem solid rgba(255,255,255,.2);
+    position: relative;
+}
+      
+.avatar__initial {
+    font-size: 1.62rem;
+}
+      
+.avatar--sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar--has-img {
+    background-image: url(https://thispersondoesnotexist.pics/img/3861.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+      
+.avatar__initial--sm {
+    font-size: 1.125rem;
+}
+      
+.avatar .status {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
